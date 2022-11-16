@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -22,8 +23,83 @@
       <section class="hero-text-box">
         <h1 class="hero-heading">Creativity Like The Ocean</h1>
         <p class="hero-text">Surf on with Hadi's creative projects</p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">View Portfolio</button>
+          </a>
+        </p>
       </section>
     </header>
     <!-- End Hero header-->
+
+    <!-- Begin Portfolio -->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            href="img/f1.jpg"
+            class="glightbox"
+            data-glightbox="title: Flower; description: this is an amazing flower I took"
+          >
+            <img src="img/f1.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f2.jpg" class="glightbox">
+            <img src="img/f2.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f3.jpg" class="glightbox">
+            <img src="img/f3.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f4.jpg" class="glightbox">
+            <img src="img/f4.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f5.jpg" class="glightbox">
+            <img src="img/f5.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f6.jpg" class="glightbox">
+            <img src="img/f6.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f7.jpg" class="glightbox">
+            <img src="img/f7.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f8.jpg" class="glightbox">
+            <img src="img/f8.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f9.jpg" class="glightbox">
+            <img src="img/f9.jpg" alt="Image of a flower" class="gallery-img" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/f10.jpg" class="glightbox">
+            <img
+              src="img/f10.jpg"
+              alt="Image of a flower"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+      </section>
+    </section>
+    <!-- End Portfolio -->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
