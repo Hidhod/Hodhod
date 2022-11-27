@@ -10,6 +10,28 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <!-- Begin Top Nav -->
+    <nav id="top-nav-bar" class="nav-bar top-nav">
+      <h1 class="logo"><a href="index.html">Hadi Naba</a></h1>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item socila-nav-item"><a href="https://twitter.com/Hadi" aria-label="Link to Twitter"
+          ><i class="fab fa-twitter" aria-hidden="true"> </i
+        ></a></li>
+        <li class="nav-item socila-nav-item"><a href="https://instagram.com/Hadi" aria-label="Link to Instagram"
+          ><i class="fab fa-instagram" aria-hidden="true"> </i
+        ></a></li>
+        <li class="nav-item socila-nav-item"><a href="https://facebook.com/Hadi" aria-label="Link to Facebook"
+          ><i class="fab fa-facebook" aria-hidden="true"> </i
+        ></a></li>
+        <li class="nav-item socila-nav-item"><a href="https://github.com/Hadi" aria-label="Link to Github"
+          ><i class="fab fa-github" aria-hidden="true"> </i
+        ></a></li>          
+        </li>
+      </ul>
+    </nav>
+    <!-- End Top Nav -->
     <!-- Begin Hero header-->
     <header class="hero-box">
       <section class="hero-image-box">
@@ -34,7 +56,7 @@
     <!-- End Hero header-->
 
     <!-- Begin Portfolio -->
-    <section id="portfolio" class="portfolio-container">
+    <section id="portfolio" class="portfolio-container section-stop">
       <h1>Portfolio</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item">
@@ -100,7 +122,7 @@
     <!-- End Portfolio -->
 
     <!-- Begin About -->
-    <section class="about-container">
+    <section id="about" class="about-container section-stop">
       <section class="about-text">
         <h1>Hadi Naba creates projects for university</h1>
         <p>
@@ -112,7 +134,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, minus?
           Dolore unde illo quidem totam.
         </p>
-        <p><a href="mailto:email@example.com">Email me</a> email@example.com</p>
+        <p><a href="mailto:hadi.naba@hotmail.com">Email me</a> hadi.naba@hotmail.com</p>
         <div class="about-social">
           <a href="https://twitter.com/Hadi" aria-label="Link to Twitter"
             ><i class="fab fa-twitter" aria-hidden="true"> </i
@@ -123,6 +145,9 @@
           <a href="https://facebook.com/Hadi" aria-label="Link to Facebook"
             ><i class="fab fa-facebook" aria-hidden="true"> </i
           ></a>
+          <a href="https://github.com/Hadi" aria-label="Link to github"
+            ><i class="fab fa-github" aria-hidden="true"> </i
+          ></a>
         </div>
       </section>
       <section class="about-image">
@@ -130,6 +155,48 @@
       </section>
     </section>
     <!-- End About -->
+
+    <!-- Begin Footer -->
+    <footer>
+      <nav class="nav-bar">
+        <h1 class="logo"><a href="index.html">Hadi Naba</a></h1>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item socila-nav-item"><a href="https://twitter.com/Hadi" aria-label="Link to Twitter"
+            ><i class="fab fa-twitter" aria-hidden="true"> </i
+          ></a></li>
+          <li class="nav-item socila-nav-item"><a href="https://instagram.com/Hadi" aria-label="Link to Instagram"
+            ><i class="fab fa-instagram" aria-hidden="true"> </i
+          ></a></li>
+          <li class="nav-item socila-nav-item"><a href="https://facebook.com/Hadi" aria-label="Link to Facebook"
+            ><i class="fab fa-facebook" aria-hidden="true"> </i
+          ></a></li> 
+          <li class="nav-item socila-nav-item"><a href="https://github.com/Hadi" aria-label="Link to Github"
+            ><i class="fab fa-github" aria-hidden="true"> </i
+          ></a></li>         
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- End Footer -->
+    
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      }
+
+      function scrollFunction() {
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("top-nav-bar").style.background = "#000000";
+        }
+        else {
+            document.getElementById("top-nav-bar").style.background = "none";
+        }
+        
+      }
+    </script>
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
